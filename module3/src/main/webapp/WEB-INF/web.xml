@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd"
+         version="6.0">
+    <data-source>
+        <name>jdbc/studentDatabase</name>
+        <class-name>org.postgresql.ds.PGSimpleDataSource</class-name>
+        <server-name>localhost</server-name>
+        <database-name>test</database-name>
+        <user>sa</user>
+        <password>sa</password>
+    </data-source>
+
+    <resource-ref>
+        <res-ref-name>jdbc/studentDatabase</res-ref-name>
+        <res-type>javax.sql.DataSource</res-type>
+    </resource-ref>
+
+    <servlet>
+        <servlet-name>StudentServlet</servlet-name>
+        <servlet-class>by.mrk.kirleon.module3.StudentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>StudentServlet</servlet-name>
+        <url-pattern>/students/*</url-pattern>
+    </servlet-mapping>
+</web-app>

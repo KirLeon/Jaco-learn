@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE instance-profile
+        SYSTEM "https://resources.jetbrains.com/writerside/1.0/product-profile.dtd">
+
+<instance-profile id="jaco-wr-docs"
+                  name="jaco-learn"
+                  start-page="starter-topic.md">
+    <toc-element topic="starter-topic.md">
+    </toc-element>
+    <toc-element topic="module1.md">
+        <toc-element topic="algorithms.md"/>
+        <toc-element topic="java-collections.md"/>
+    </toc-element>
+    <toc-element topic="module2.md">
+        <toc-element topic="app-testing-and-building.md"/>
+        <toc-element topic="file-system.md"/>
+    </toc-element>
+    <toc-element topic="module3.md">
+        <toc-element topic="client-server-architecture.md"/>
+        <toc-element topic="ioc-di.md"/>
+        <toc-element topic="working-with-databases.md"/>
+    </toc-element>
+    <toc-element topic="final-task.md"/>
+</instance-profile>
