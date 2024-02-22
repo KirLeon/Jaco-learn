@@ -35,18 +35,17 @@ private static final String PASSWORD = "password";
 ```
 
 `Java Database Connectivity` (JDBC) предоставляет стандартный способ взаимодействия с базами данных из Java-приложений.
-Он
-предоставляет API для выполнения SQL-запросов, обработки результатов и управления транзакциями. В этой статье мы
-рассмотрим основы работы с JDBC для взаимодействия с базами данных в Java-приложениях.
+Он предоставляет API для выполнения SQL-запросов, обработки результатов и управления транзакциями. В этой статье будут
+рассмотрены основы работы с JDBC для взаимодействия с базами данных в Java-приложениях.
 
 Основные шаги работы с `JDBC`:
 
 * Загрузка драйвера: Перед началом работы с базой данных необходимо загрузить JDBC-драйвер для используемой базы данных.
 
-* Установка соединения: После загрузки драйвера устанавливаем соединение с базой данных, используя соответствующие
+* Установка соединения: После загрузки драйвера устанавливается соединение с базой данных, используя соответствующие
   параметры подключения.
 
-* Выполнение запросов: Мы можем создавать и выполнять SQL-запросы к базе данных с помощью объектов Statement или
+* Выполнение запросов: Можно создавать и выполнять SQL-запросы к базе данных с помощью объектов Statement или
   `PreparedStatement`.
 
 * Обработка результатов: После выполнения запроса мы можем обрабатывать результаты, полученные от базы данных.
@@ -105,10 +104,10 @@ EntityManager и JPA для работы с базами данных в Java-п
 Пример кода:
 
 ```
-import javax.persistence.EntityManager;
-import javax.persistence.EntityManagerFactory;
-import javax.persistence.EntityTransaction;
-import javax.persistence.Persistence;
+import jakarta.persistence.EntityManager;
+import jakarta.persistence.EntityManagerFactory;
+import jakarta.persistence.EntityTransaction;
+import jakarta.persistence.Persistence;
 
 public class JPAClient {
 public static void main(String[] args) {
@@ -143,3 +142,10 @@ EntityTransaction tx = em.getTransaction();
     }
 }
 ```
+
+## Контроль знаний
+
+1. Что такое JDBC и JPA?
+2. Какие классы используются для установления соединения с базой данных?
+3. Что такое EntityManager?
+4. Как работать с транзакциями при помощи JPA?
